@@ -7,13 +7,7 @@ const port = Number(process.env.PORT || 3001)
 const corsOrigin = process.env.CORS_ORIGIN
 
 const app = new Elysia()
-  .use(
-    cors({
-      origin: corsOrigin
-        ? corsOrigin.split(',').map((item) => item.trim())
-        : true,
-    }),
-  )
+  .use(cors())
   .get('/health', () => ({ ok: true }))
   .get('/portfolios', async ({ query, set }) => {
     try {
