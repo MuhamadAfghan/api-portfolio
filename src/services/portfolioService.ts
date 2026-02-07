@@ -45,7 +45,7 @@ const mapPortfolioRecord = (record: {
     .filter(Boolean) as TechStack[]
 
   return {
-    ...(record as Portfolio),
+    ...(record as unknown as Portfolio),
     images,
     techStacks,
   }
