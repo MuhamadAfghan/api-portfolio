@@ -52,6 +52,6 @@ const app = new Elysia()
       return { error: message }
     }
   })
-  .listen(port)
+// .listen(port) // Removed for Vercel/WebStandard compatibility
 
-console.log(`Backend API running on http://localhost:${app.server?.port ?? port}`)
+export default app
