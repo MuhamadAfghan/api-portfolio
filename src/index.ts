@@ -1,7 +1,7 @@
 import 'dotenv/config'
 import { Elysia } from 'elysia'
 import { cors } from '@elysiajs/cors'
-import { fetchPortfolioBySlug, fetchPortfolios } from './services/portfolioService'
+import { fetchPortfolioBySlug, fetchPortfolios } from './services/portfolioService.js'
 
 const port = Number(process.env.PORT || 3001)
 const corsOrigin = process.env.CORS_ORIGIN

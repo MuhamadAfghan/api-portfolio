@@ -1,4 +1,4 @@
-import { getSupabaseClient } from '../lib/supabase'
+import { getSupabaseClient } from '../lib/supabase.js'
 
 export type PortfolioStatus = 'draft' | 'published'
 

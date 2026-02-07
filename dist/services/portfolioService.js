@@ -1,4 +1,4 @@
-import { getSupabaseClient } from '../lib/supabase';
+import { getSupabaseClient } from '../lib/supabase.js';
 const mapPortfolioRecord = (record) => {
     const images = (record.portfolio_images || []);
     const techStacks = (record.portfolio_tech_stack || [])
